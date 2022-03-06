@@ -1,10 +1,17 @@
 import "./styles.css";
+import React from "react";
+
+var livecounter = 0;
 
 export default function App() {
+  function likecounter() {
+    livecounter = livecounter + 1;
+    console.log(livecounter);
+  }
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <h1>hy</h1>
+      <button onClick={likecounter}> like me </button>
     </div>
   );
 }

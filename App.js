@@ -1,16 +1,15 @@
 import "./styles.css";
 
 export default function App() {
-
-     var username=prompt("enter your name");
-var color="blue";
-
+  var livecounter = 0;
+  function likecounter() {
+    livecounter = livecounter + 1;
+    console.log(livecounter);
+  }
   return (
     <div className="App">
-      <h1 style={{color:color}} >welcome {username}</h1>
-  
+      <h1>hy</h1>
+      <button onClick={likecounter}> like me </button>
     </div>
   );
 }
-  
-
