@@ -1,17 +1,17 @@
+import React, { useState } from "react";
 import "./styles.css";
-import React from "react";
-
-var livecounter = 0;
 
 export default function App() {
-  function likecounter() {
-    livecounter = livecounter + 1;
-    console.log(livecounter);
+  const [likecounter, setlikecounter] = useState(0);
+
+  function likecounterhandler() {
+    var livecounter = likecounter + 1;
+    setlikecounter(livecounter);
   }
   return (
     <div className="App">
       <h1>hy</h1>
-      <button onClick={likecounter}> like me </button>
+      <button onClick={likecounterhandler}> le me </button> {likecounter}
     </div>
   );
 }
